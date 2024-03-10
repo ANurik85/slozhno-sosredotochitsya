@@ -2,4 +2,282 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: #ffeef6;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: calc(41.5%) calc(16%) calc(41.5%);
+  height: 768px;
+  width: 100%;
+}
+
+.header__theme-menu {
+  position: relative;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--text-color);
+  margin-block-start: 20px;
+  gap: 6px;
+}
+
+.header__theme-menu-item {
+  margin-inline-start: 5px;
+}
+
+.header__theme-menu-button {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 1px 13px 5px 13px;
+  border: none;
+  background: none;
+  color: var(--text-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--text-color);
+}
+
+.decor_rec::after {
+  content: "REC";
+  position: absolute;
+  color: var(--accent-color);
+  left: calc(94% - 15px);
+  top: 20px;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+.decor_rec::before {
+  content: "";
+  position: absolute;
+  color: var(--accent-color);
+  width: 9px;
+  height: 9px;
+  background: #ff0070;
+  border-radius: 50%;
+  left: calc(97% + 5px);
+  top: 27px;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.decor_corner::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: calc(97%);
+  top: 20px;
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: var(--text-color);
+}
+
+.decor_corner::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 20px;
+  top: 723px;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: var(--text-color);
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__text {
+  margin-block: auto;
+  margin-inline: 50% 20px;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--title-text-color);
+  border: 1px solid var(--title-border-color);
+}
+
+.text-decor {
+  background-color: var(--text-decor);
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-light.png);
+  width: 100%;
+  background-position: bottom;
+}
+
+@media (width <= 375px) {
+  .theme_auto .header {
+    position: relative;
+    display: grid;
+    grid-template-rows: calc(36%) calc(17%) calc(41.5%);
+  }
+
+  .theme_auto .decorated-zone {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 668px;
+  }
+
+  .theme_auto .header__text {
+    margin-inline: 10px;
+    margin-block-start: 130px;
+    margin-block-end: 30px;
+  }
+
+  .theme_auto .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-block-start: 75px;
+    margin-inline-end: 8px;
+    gap: 13px;
+  }
+  .theme_auto .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-inline-start: 10px;
+  }
+  .theme_auto .decor_corner::before {
+    top: 95%;
+    left: 10px;
+  }
+  .theme_auto .decor_corner::after {
+    top: 1.5%;
+    left: 91%;
+  }
+  .theme_auto .decor_rec::after {
+    top: 4%;
+    left: 81%;
+  }
+  .theme_auto .decor_rec::before {
+    top: 7%;
+    left: 92.5%;
+  }
+  .theme_auto .header__theme-menu-button_active:hover {
+    border: 1px solid rgb(53 52 48 / 0.5);
+  }
+  .theme_auto .header__theme-menu-button_active:focus {
+    border: none;
+  }
+
+  .theme_auto .header__theme-menu-button_active:focus-visible {
+    border-bottom: 1px solid rgb(53 52 48 / 0.5);
+  }
+}
+
+@media (376px <= width < 769px) {
+  .theme_auto .header {
+    position: relative;
+    display: grid;
+    grid-template-rows: calc(45.5%) calc(16%) calc(41.5%);
+  }
+  .theme_auto .decorated-zone {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1024px;
+  }
+  .theme_auto .header__text {
+    margin-block-start: 97px;
+    margin-inline-start: min(50%);
+    margin-block-end: 212px;
+  }
+
+  .theme_auto .header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-block-start: 196px;
+    margin-inline-end: 20px;
+    gap: 10px;
+  }
+  .theme_auto .decor_corner::before {
+    top: 96%;
+  }
+  .theme_auto .decor_corner::after {
+    left: 94%;
+  }
+  .theme_auto .decor_rec::after {
+    left: 89%;
+  }
+  .theme_auto .decor_rec::before {
+    left: 94.5%;
+  }
+  .theme_auto .header__theme-menu-button_active:hover {
+    border: 1px solid rgb(53 52 48 / 0.5);
+  }
+  .theme_auto .header__theme-menu-button_active:focus {
+    border: none;
+  }
+
+  .theme_auto .header__theme-menu-button_active:focus-visible {
+    border-bottom: 1px solid rgb(53 52 48 / 0.5);
+  }
+}
+
+@media (769px <= width < 1025px) {
+  .theme_auto .decorated-zone {
+    width: 100%;
+    background-position: bottom;
+  }
+  .theme_auto .header__text {
+    margin-inline-start: 50%;
+  }
+
+  .theme_auto .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-block-start: 20px;
+    gap: 6px;
+  }
+  .theme_auto .decor_corner::before {
+    top: 94%;
+  }
+  .theme_auto .decor_corner::after {
+    left: 96%;
+  }
+  .theme_auto .decor_rec::after {
+    left: 92%;
+  }
+  .theme_auto .decor_rec::before {
+    left: 96.5%;
+  }
+  .theme_auto .header__theme-menu-button_active:hover {
+    border: 1px solid rgb(53 52 48 / 0.5);
+  }
+  .theme_auto .header__theme-menu-button_active:focus {
+    border: none;
+  }
+
+  .theme_auto .header__theme-menu-button_active:focus-visible {
+    border-bottom: 1px solid rgb(53 52 48 / 0.5);
+  }
 }
