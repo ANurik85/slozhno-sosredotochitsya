@@ -4,29 +4,15 @@
 */
 /* Файл variables.css */
 :root {
+  --fonts: 'IBM Plex Mono';
+
   --accent-color: #FF0070;
   --text-color: #353430;
   --title-color: #FFC2E6;
   --title-border-color: #000000;
   --text-decor: #FF8DCB;
-  --title-text-color: #000028;
+  --title-text-color: #353430;
+  --heading-color: #353430;
   
 }
 
-/*light
- --accent-color: #FF0070;
-  --text-color: #353430;
-  --title-color: #FFC2E6;
-  --title-border-color: #000000;
-  --text-decor: #FF8DCB;
-  --title-text-color: var(--text-color:);
-*/
-
-/*dark
- --accent-color: #FF0070;
-  --text-color: var(--accent-color);
-  --title-color: #DB00FF;
-  --title-border-color: none;
-  --text-decor: var(--accent-color);
-  --title-text-color: #000028;
-*/

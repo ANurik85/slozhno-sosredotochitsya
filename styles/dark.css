@@ -17,6 +17,8 @@
   --title-border-color: none;
   --text-decor: var(--accent-color);
   --title-text-color: #000028;
+  --main-text-color: #F1B2CE;
+  --heading-color: var(--accent-color);
 }
 
 
@@ -29,7 +31,8 @@
   --title-border-color: none;
   --text-decor: var(--accent-color);
   --title-text-color: #000028;
-  
+  --main-text-color: #F1B2CE;
+  --heading-color: var(--accent-color);
  
   
 }
@@ -45,6 +48,7 @@
         --title-border-color: none;
         --text-decor: var(--accent-color);
         --title-text-color: #000028;
+        --main-text-color: #F1B2CE;
         
     }
     .theme_dark .decor_rec {
@@ -125,6 +129,84 @@
   .theme_dark .header__theme-menu-button_active:focus-visible {
     border-bottom: 1px solid rgb(255 0 112 / 0.5);
   }
+  .theme_dark .content_top-container {
+    display: block;
+  }
+  .theme_dark .content_top {
+    margin-inline: 10px;
+    margin-block-start: 40px;
+    margin-block-end: 58px;
+  }
+  .theme_dark .heading {
+    margin-block-end: 20px;
+  }
+  .theme_dark .content_top-container .card_block:first-of-type {
+    margin-block-end: 28px;
+      
+  }
+  .theme_dark .content_middle-container {
+    display: block;
+  }
+  .theme_dark .content_middle {
+    margin-inline: 10px;
+    margin-block-end: 56px;
+  }
+  .theme_dark .content_middle-heading {
+    margin-block-end: 20px;
+    margin-inline-end: 0px;
+  }
+  .theme_dark .content_middle-container .card_block:nth-last-child(2) {
+    margin-inline: 0px;
+    margin-block: 0px;
+  }
+  .theme_dark .content_middle-container .card_block .paragraph {
+    margin-block-end: 25px;
+  }
+
+  .theme_dark .content_bottom-container {
+    display: block;
+  }
+  .theme_dark .content_bottom {
+    margin-inline: 10px;
+    margin-block-end: 53px;
+  }
+  .theme_dark .content_bottom-heading {
+    margin-block-end: 20px;
+    padding-inline-end: 0px;
+  }
+
+  .theme_dark .content_bottom-container .card_block:first-of-type .card_title:first-of-type {
+    margin-block-end: 20px;
+    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    font-weight: 700;
+      
+  }
+  .theme_dark .content_bottom-container .card_block .card_title {
+   font-weight: 400;
+   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  }
+  .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
+    margin-block-end: 26px;
+  }
+  
+  .theme_dark .content_gallery {
+    margin-inline: 10px;
+    margin-block-end: 40px;
+  }
+  .theme_dark .content_gallery-container {
+    display: block;
+    margin-block-start: 10px;
+  }
+  .theme_dark .content_picture {
+    width: min(100%, 355px);
+    height: 100%;
+    margin-block-end: 6px;
+  }
+ 
+  .theme_dark .content_gallery-heading {
+    margin-block-end: 10px;
+  }
+ 
 
  } 
 
@@ -178,8 +260,69 @@ left: 94%;
   .theme_dark .header__theme-menu-button_active:focus-visible {
     border-bottom: 1px solid rgb(255 0 112 / 0.5);
   }
+  .theme_dark .heading {
+    padding-right: 30px;
+  }
+  .theme_dark .content_top-container {
+    grid-template-columns: calc(36%) calc(64%);
+        
+   }
 
+   .theme_dark .content_middle-container {
+    display: block;
+    
+  }
+  .theme_dark .content_middle-container .card_block:nth-last-child(2) {
+    margin-inline: 0px;
+    margin-block: 23px;
+  }
+
+  .theme_dark .content_bottom-container .card_block:first-of-type .card_title:first-of-type {
+    margin-block-end: 20px;
+    font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    font-weight: 700;
+      
+  }
+  .theme_dark .content_bottom-container .card_block .card_title {
+   font-weight: 400;
+   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+  }
+  .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
+    margin-block-end: 26px;
+  }
+  .theme_dark .content_bottom-container {
+    grid-template-columns: calc(35%) calc(65%);
+  }
+  .theme_dark .content_gallery-container {
+    display: grid;
+    grid-template-columns: 31% 32% 31%;
+    grid-template-rows: 25% 29% 41%;
+    height: 100%;
+  }
+
+  .theme_dark .sunset {
+    grid-area: sunset;
+   width: min(100%, 479px);
+  
+  }
+  .theme_dark .ice-cream {
+    grid-area: ice-cream;
+    width: min(100%, 229px);
+  }
+  .theme_dark .tape {
+    grid-area: tape;
+    width: min(100%, 229px);
+  }
+  .theme_dark .books {
+     grid-area: books;
+    width: min(100%, 230px);
+  }
+  .theme_dark .street {
+    grid-area: street;
+    width: min(100%, 479px);
+  }
  } 
+
 
 @media (769px <= width < 1025px) {
   .theme_dark .decorated-zone {
