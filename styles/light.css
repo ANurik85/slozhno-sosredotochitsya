@@ -39,6 +39,7 @@
     --title-border-color: #000000;
     --text-decor: #ff8dcb;
     --title-text-color: var(--text-color: );
+    --heading-color: var(--text-color);
   }
 
   .decor_rec {

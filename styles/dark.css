@@ -30,6 +30,7 @@
   --title-text-color: #000028;
   --main-text-color: #f1b2ce;
   --heading-color: var(--accent-color);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,12 +43,27 @@
     --text-decor: var(--accent-color);
     --title-text-color: #000028;
     --main-text-color: #f1b2ce;
+    --heading-color: var(--accent-color);
+  
   }
 
-  .theme_dark .decor_rec {
+  .page {
+    background-color: #000028;
+    background-attachment: fixed;
+  }
+  
+  .decor_rec {
     display: inherit;
   }
+
+  .decorated-zone {
+  background-image: url(../images/cover-image-dark.png);
+  width: auto;
+  background-position: bottom;
+  
 }
+}
+
 .theme_dark .decor_rec {
   display: inherit;
 }
