@@ -4,8 +4,7 @@
 */
 /* Файл variables.css */
 :root {
-  --fonts: "IBM Plex Mono";
-
+  --fonts: 'IBM Plex Mono';
   --accent-color: #ff0070;
   --text-color: #353430;
   --title-color: #ffc2e6;

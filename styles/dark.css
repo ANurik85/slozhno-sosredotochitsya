@@ -9,8 +9,6 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: #000028;
-
   --accent-color: #ff0070;
   --text-color: var(--accent-color);
   --title-color: #db00ff;
@@ -19,6 +17,8 @@
   --title-text-color: #000028;
   --main-text-color: #f1b2ce;
   --heading-color: var(--accent-color);
+  background-color: #000028;
+  background-attachment: fixed;
 }
 
 :root.theme_dark {
@@ -43,6 +43,7 @@
     --title-text-color: #000028;
     --main-text-color: #f1b2ce;
   }
+
   .theme_dark .decor_rec {
     display: inherit;
   }
@@ -56,9 +57,9 @@
   width: auto;
   background-position: bottom;
 }
-/* Остальные стили */
 
 @media (width <= 375px) {
+
   .theme_dark .header {
     position: relative;
     display: grid;
@@ -87,29 +88,36 @@
     margin-inline-end: 8px;
     gap: 13px;
   }
+
   .theme_dark .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-inline-start: 10px;
   }
+
   .theme_dark .decor_corner::before {
     top: 95%;
     left: 10px;
   }
+
   .theme_dark .decor_corner::after {
     top: 1.5%;
     left: 91%;
   }
+
   .theme_dark .decor_rec::after {
     top: 4%;
     left: 81%;
   }
+
   .theme_dark .decor_rec::before {
     top: 7%;
     left: 92.5%;
   }
+
   .theme_dark .header__theme-menu-button_active:hover {
     border: 1px solid rgb(255 0 112 / 0.5);
   }
+
   .theme_dark .header__theme-menu-button_active:focus {
     border: none;
   }
@@ -117,35 +125,44 @@
   .theme_dark .header__theme-menu-button_active:focus-visible {
     border-bottom: 1px solid rgb(255 0 112 / 0.5);
   }
+
   .theme_dark .content_top-container {
     display: block;
   }
+
   .theme_dark .content_top {
     margin-inline: 10px;
     margin-block-start: 40px;
     margin-block-end: 58px;
   }
+
   .theme_dark .heading {
     margin-block-end: 20px;
   }
+
   .theme_dark .content_top-container .card_block:first-of-type {
     margin-block-end: 28px;
   }
+
   .theme_dark .content_middle-container {
     display: block;
   }
+
   .theme_dark .content_middle {
     margin-inline: 10px;
     margin-block-end: 56px;
   }
+
   .theme_dark .content_middle-heading {
     margin-block-end: 20px;
     margin-inline-end: 0px;
   }
+
   .theme_dark .content_middle-container .card_block:nth-last-child(2) {
     margin-inline: 0px;
     margin-block: 0px;
   }
+
   .theme_dark .content_middle-container .card_block .paragraph {
     margin-block-end: 25px;
   }
@@ -153,10 +170,12 @@
   .theme_dark .content_bottom-container {
     display: block;
   }
+
   .theme_dark .content_bottom {
     margin-inline: 10px;
     margin-block-end: 53px;
   }
+
   .theme_dark .content_bottom-heading {
     margin-block-end: 20px;
     padding-inline-end: 0px;
@@ -170,10 +189,12 @@
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
   }
+
   .theme_dark .content_bottom-container .card_block .card_title {
     font-weight: 400;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   }
+
   .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
     margin-block-end: 26px;
   }
@@ -182,10 +203,12 @@
     margin-inline: 10px;
     margin-block-end: 40px;
   }
+
   .theme_dark .content_gallery-container {
     display: block;
     margin-block-start: 10px;
   }
+
   .theme_dark .content_picture {
     width: min(100%, 355px);
     height: 100%;
@@ -195,14 +218,20 @@
   .theme_dark .content_gallery-heading {
     margin-block-end: 10px;
   }
+
+  .theme_dark .footer {
+    height: 668px;
+  }
 }
 
 @media (376px <= width < 769px) {
+
   .theme_dark .header {
     position: relative;
     display: grid;
     grid-template-rows: calc(45.5%) calc(16%) calc(41.5%);
   }
+
   .theme_dark .decorated-zone {
     background-image: url(../images/cover-image-dark.png);
     width: 100%;
@@ -210,6 +239,7 @@
     background-repeat: no-repeat;
     height: 1024px;
   }
+
   .theme_dark .header__text {
     margin-block-start: 97px;
     margin-inline-start: min(50%);
@@ -224,21 +254,27 @@
     margin-inline-end: 20px;
     gap: 10px;
   }
+
   .theme_dark .decor_corner::before {
     top: 96%;
   }
+
   .theme_dark .decor_corner::after {
     left: 94%;
   }
+
   .theme_dark .decor_rec::after {
     left: 89%;
   }
+
   .theme_dark .decor_rec::before {
     left: 94.5%;
   }
+
   .theme_dark .header__theme-menu-button_active:hover {
     border: 1px solid rgb(255 0 112 / 0.5);
   }
+
   .theme_dark .header__theme-menu-button_active:focus {
     border: none;
   }
@@ -246,9 +282,11 @@
   .theme_dark .header__theme-menu-button_active:focus-visible {
     border-bottom: 1px solid rgb(255 0 112 / 0.5);
   }
+
   .theme_dark .heading {
     padding-right: 30px;
   }
+
   .theme_dark .content_top-container {
     grid-template-columns: calc(36%) calc(64%);
   }
@@ -256,6 +294,7 @@
   .theme_dark .content_middle-container {
     display: block;
   }
+
   .theme_dark .content_middle-container .card_block:nth-last-child(2) {
     margin-inline: 0px;
     margin-block: 23px;
@@ -269,16 +308,20 @@
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
   }
+
   .theme_dark .content_bottom-container .card_block .card_title {
     font-weight: 400;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   }
+
   .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
     margin-block-end: 26px;
   }
+
   .theme_dark .content_bottom-container {
     grid-template-columns: calc(35%) calc(65%);
   }
+
   .theme_dark .content_gallery-container {
     display: grid;
     grid-template-columns: 31% 32% 31%;
@@ -290,21 +333,29 @@
     grid-area: sunset;
     width: min(100%, 479px);
   }
+
   .theme_dark .ice-cream {
     grid-area: ice-cream;
     width: min(100%, 229px);
   }
+
   .theme_dark .tape {
     grid-area: tape;
     width: min(100%, 229px);
   }
+
   .theme_dark .books {
     grid-area: books;
     width: min(100%, 230px);
   }
+
   .theme_dark .street {
     grid-area: street;
     width: min(100%, 479px);
+  }
+
+  .theme_dark .footer {
+    height: 1024px;
   }
 }
 
@@ -314,6 +365,7 @@
     width: 100%;
     background-position: bottom;
   }
+
   .theme_dark .header__text {
     margin-inline-start: 50%;
   }
@@ -323,25 +375,30 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-
     margin-block-start: 20px;
     gap: 6px;
   }
+
   .theme_dark .decor_corner::before {
     top: 94%;
   }
+
   .theme_dark .decor_corner::after {
     left: 96%;
   }
+
   .theme_dark .decor_rec::after {
     left: 92%;
   }
+
   .theme_dark .decor_rec::before {
     left: 96.5%;
   }
+
   .theme_dark .header__theme-menu-button_active:hover {
     border: 1px solid rgb(255 0 112 / 0.5);
   }
+
   .theme_dark .header__theme-menu-button_active:focus {
     border: none;
   }
