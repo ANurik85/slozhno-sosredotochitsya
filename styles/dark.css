@@ -240,7 +240,7 @@
   }
 }
 
-@media (375px <= width < 768px) {
+@media (376px <= width <= 768px) {
 
   .theme_dark .header {
     position: relative;
@@ -375,7 +375,7 @@
   }
 }
 
-@media (768px <= width < 1024px) {
+@media (769px <= width < 1025px) {
   .theme_dark .decorated-zone {
     background-image: url(../images/cover-image-dark.png);
     width: 100%;
