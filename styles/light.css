@@ -223,7 +223,7 @@
   }
 }
 
-@media (376px <= width <= 751px) {
+@media (376px <= width <= 768px) {
   .theme_light .header {
     position: relative;
     display: grid;
