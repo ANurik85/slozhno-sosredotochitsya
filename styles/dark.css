@@ -240,7 +240,7 @@
   }
 }
 
-@media (376px <= width <= 768px) {
+@media (376px <= width <= 751px) {
 
   .theme_dark .header {
     position: relative;
