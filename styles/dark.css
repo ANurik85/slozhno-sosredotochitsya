@@ -9,6 +9,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+    background-repeat: no-repeat;
+    block-size: 100vh;
+    min-block-size: 668px;
+  background-position: center;
+
+}
+
+:root .theme_dark {
   --accent-color: #ff0070;
   --text-color: var(--accent-color);
   --title-color: #db00ff;
@@ -19,18 +29,7 @@
   --heading-color: var(--accent-color);
   background-color: #000028;
   background-attachment: fixed;
-}
-
-:root.theme_dark {
-  --accent-color: #ff0070;
-  --text-color: var(--accent-color);
-  --title-color: #db00ff;
-  --title-border-color: none;
-  --text-decor: var(--accent-color);
-  --title-text-color: #000028;
-  --main-text-color: #f1b2ce;
-  --heading-color: var(--accent-color);
-
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,55 +43,46 @@
     --title-text-color: #000028;
     --main-text-color: #f1b2ce;
     --heading-color: var(--accent-color);
+    
+  
   
   }
-
-  .page {
-    background-color: #000028;
-    background-attachment: fixed;
-  }
+   .page {
+    background-image: url(../images/cover-image-dark.png);
+      background-size: cover;
+        background-repeat: no-repeat;
+        block-size: 100vh;
+        min-block-size: 668px;
+      background-position: center;
+    
+    }
   
   .decor_rec {
     display: inherit;
   }
 
-  .decorated-zone {
-  background-image: url(../images/cover-image-dark.png);
-  width: auto;
-  background-position: bottom;
-  
+
 }
-}
+
 
 .theme_dark .decor_rec {
   display: inherit;
 }
 
-.theme_dark .decorated-zone {
-  background-image: url(../images/cover-image-dark.png);
-  width: auto;
-  background-position: bottom;
-}
+
 
 @media (width <= 375px) {
 
   .theme_dark .header {
     position: relative;
     display: grid;
-    grid-template-rows: calc(36%) calc(17%) calc(41.5%);
-  }
-
-  .theme_dark .decorated-zone {
-    background-image: url(../images/cover-image-dark.png);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 668px;
+    grid-template-rows: 1fr min-content 1fr;
+    justify-self: center;
+    
   }
 
   .theme_dark .header__text {
     margin-inline: 10px;
-    margin-block-start: 130px;
     margin-block-end: 30px;
   }
 
@@ -236,25 +226,22 @@
   }
 
   .theme_dark .footer {
-    height: 668px;
+    block-size: 100vh;
+    min-block-size: 668px;
+    
   }
 }
 
-@media (376px <= width <= 751px) {
+@media (376px <= width <= 768px) {
 
   .theme_dark .header {
     position: relative;
     display: grid;
-    grid-template-rows: calc(45.5%) calc(16%) calc(41.5%);
+    grid-template-rows: 1fr min-content 1fr;
+    justify-self: center;
   }
 
-  .theme_dark .decorated-zone {
-    background-image: url(../images/cover-image-dark.png);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1024px;
-  }
+  
 
   .theme_dark .header__text {
     margin-block-start: 97px;
@@ -376,11 +363,7 @@
 }
 
 @media (769px <= width < 1025px) {
-  .theme_dark .decorated-zone {
-    background-image: url(../images/cover-image-dark.png);
-    width: 100%;
-    background-position: bottom;
-  }
+  
 
   .theme_dark .header__text {
     margin-inline-start: 50%;
