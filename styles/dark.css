@@ -78,12 +78,27 @@
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     justify-self: center;
+  
+  }
+
+  .theme_dark .decorated-zone {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    block-size: 100vh;
+    min-block-size: 668px;
     
   }
 
   .theme_dark .header__text {
     margin-inline: 10px;
+    margin-block-start: 17px;
     margin-block-end: 30px;
+    align-self: center;
+    word-wrap: break-word;
+    text-align: left;
+    
+
   }
 
   .theme_dark .header__theme-menu-list {
@@ -94,7 +109,6 @@
     margin-inline-end: 8px;
     gap: 13px;
   }
-
   .theme_dark .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-inline-start: 10px;
@@ -139,7 +153,7 @@
   .theme_dark .content_top {
     margin-inline: 10px;
     margin-block-start: 40px;
-    margin-block-end: 58px;
+    margin-block-end: 50px;
   }
 
   .theme_dark .heading {
@@ -147,7 +161,7 @@
   }
 
   .theme_dark .content_top-container .card_block:first-of-type {
-    margin-block-end: 28px;
+    margin-block-end: 22px;
   }
 
   .theme_dark .content_middle-container {
@@ -156,7 +170,7 @@
 
   .theme_dark .content_middle {
     margin-inline: 10px;
-    margin-block-end: 56px;
+    margin-block-end: 50px;
   }
 
   .theme_dark .content_middle-heading {
@@ -170,7 +184,7 @@
   }
 
   .theme_dark .content_middle-container .card_block .paragraph {
-    margin-block-end: 25px;
+    margin-block-end: 21px;
   }
 
   .theme_dark .content_bottom-container {
@@ -179,7 +193,7 @@
 
   .theme_dark .content_bottom {
     margin-inline: 10px;
-    margin-block-end: 53px;
+    margin-block-end: 47px;
   }
 
   .theme_dark .content_bottom-heading {
@@ -191,7 +205,8 @@
     .content_bottom-container
     .card_block:first-of-type
     .card_title:first-of-type {
-    margin-block-end: 20px;
+      margin-block-start: 20px;
+    margin-block-end: 10px;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
   }
@@ -202,12 +217,12 @@
   }
 
   .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
-    margin-block-end: 26px;
+    margin-block-end: 21px;
   }
 
   .theme_dark .content_gallery {
     margin-inline: 10px;
-    margin-block-end: 40px;
+    margin-block-end: 31px;
   }
 
   .theme_dark .content_gallery-container {
@@ -215,14 +230,14 @@
     margin-block-start: 10px;
   }
 
+  .theme_dark .content_gallery-heading {
+    margin-block-end: 10px;
+  }
+  
   .theme_dark .content_picture {
     width: min(100%, 355px);
     height: 100%;
     margin-block-end: 6px;
-  }
-
-  .theme_dark .content_gallery-heading {
-    margin-block-end: 10px;
   }
 
   .theme_dark .footer {
