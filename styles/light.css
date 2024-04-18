@@ -25,6 +25,8 @@
   --text-decor: #ff8dcb;
   --title-text-color: var(--text-color);
   --heading-color: var(--text-color);
+  background-color: #ffeef6;
+  background-attachment: fixed;
 }
 
 @media (prefers-color-scheme: light) {
@@ -59,7 +61,7 @@
 
 
 
-@media (width <= 376px) {
+@media (width <= 375px) {
   .theme_light .header {
     position: relative;
     display: grid;
@@ -236,19 +238,28 @@
 }
 
 @media (376px <= width <= 768px) {
+  
   .theme_light .header {
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     justify-self: center;
+    min-block-size: 1024px;
+    
   }
 
- 
+  .theme_light .decorated-zone {
+
+  }
 
   .theme_light .header__text {
-    margin-block-start: 97px;
-    margin-inline-start: min(50%);
-    margin-block-end: 212px;
+    margin-block-start: 7px;
+    width: max(47%, 364px);
+    margin-block-end: 30px;
+    align-self: center;
+    margin-inline: 20px;
+    justify-self: right;
+    
   }
 
   .theme_light .header__theme-menu-list {
@@ -277,11 +288,11 @@
   }
 
   .theme_light .header__theme-menu-button_active:hover {
-    border: 1px solid rgb(53 52 48 / 0.5);
+    outline: 1px solid rgb(53 52 48 / 0.5);
   }
 
   .theme_light .header__theme-menu-button_active:focus {
-    border: none;
+    outline: none;
   }
 
   .theme_light .header__theme-menu-button_active:focus-visible {
@@ -293,7 +304,15 @@
   }
 
   .theme_light .content_top-container {
-    grid-template-columns: calc(36%) calc(64%);
+    grid-template-columns: calc(35%) calc(65%);
+  }
+
+  .theme_light .content_top-container .card_block:first-of-type {
+    margin-block-end: 20px;
+  }
+
+  .theme_light .content_middle {
+    margin-block-end: 81px;
   }
 
   .theme_light .content_middle-container {
@@ -305,11 +324,18 @@
     margin-block: 23px;
   }
 
+  .theme_light .content_bottom-heading {
+    padding-inline-end: 20px;
+    
+  
+  }
+
   .theme_light
     .content_bottom-container
     .card_block:first-of-type
     .card_title:first-of-type {
-    margin-block-end: 20px;
+    margin-block-end: 10px;
+    padding-block-start: 10px;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
   }
@@ -319,8 +345,12 @@
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   }
 
+  .theme_light .card_title {
+    margin-block-end: 9px;
+  }
+
   .theme_light .content_bottom-container .card_block:not(:last-of-type) {
-    margin-block-end: 26px;
+    margin-block-end: 21px;
   }
 
   .theme_light .content_bottom-container {

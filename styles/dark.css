@@ -71,7 +71,7 @@
 
 
 
-@media (width <= 376px) {
+@media (width <= 375px) {
 
   .theme_dark .header {
     position: relative;
@@ -249,19 +249,27 @@
 
 @media (376px <= width <= 768px) {
 
-  .theme_dark .header {
+  .header {
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     justify-self: center;
+    min-block-size: 1024px;
+    
   }
 
-  
+  .theme_dark .decorated-zone {
+
+  }
 
   .theme_dark .header__text {
-    margin-block-start: 97px;
-    margin-inline-start: min(50%);
-    margin-block-end: 212px;
+    margin-block-start: 7px;
+    width: max(47%, 364px);
+    margin-block-end: 30px;
+    align-self: center;
+    margin-inline: 20px;
+    justify-self: right;
+    
   }
 
   .theme_dark .header__theme-menu-list {
@@ -290,15 +298,15 @@
   }
 
   .theme_dark .header__theme-menu-button_active:hover {
-    border: 1px solid rgb(255 0 112 / 0.5);
+    outline: 1px solid rgb(53 52 48 / 0.5);
   }
 
   .theme_dark .header__theme-menu-button_active:focus {
-    border: none;
+    outline: none;
   }
 
   .theme_dark .header__theme-menu-button_active:focus-visible {
-    border-bottom: 1px solid rgb(255 0 112 / 0.5);
+    border-bottom: 1px solid rgb(53 52 48 / 0.5);
   }
 
   .theme_dark .heading {
@@ -306,7 +314,15 @@
   }
 
   .theme_dark .content_top-container {
-    grid-template-columns: calc(36%) calc(64%);
+    grid-template-columns: calc(35%) calc(65%);
+  }
+
+  .theme_dark .content_top-container .card_block:first-of-type {
+    margin-block-end: 20px;
+  }
+
+  .theme_dark .content_middle {
+    margin-block-end: 81px;
   }
 
   .theme_dark .content_middle-container {
@@ -318,11 +334,18 @@
     margin-block: 23px;
   }
 
+  .theme_dark .content_bottom-heading {
+    padding-inline-end: 20px;
+    
+  
+  }
+
   .theme_dark
     .content_bottom-container
     .card_block:first-of-type
     .card_title:first-of-type {
-    margin-block-end: 20px;
+    margin-block-end: 10px;
+    padding-block-start: 10px;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
   }
@@ -332,8 +355,12 @@
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   }
 
+  .theme_dark .card_title {
+    margin-block-end: 9px;
+  }
+
   .theme_dark .content_bottom-container .card_block:not(:last-of-type) {
-    margin-block-end: 26px;
+    margin-block-end: 21px;
   }
 
   .theme_dark .content_bottom-container {
