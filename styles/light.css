@@ -46,7 +46,7 @@
         block-size: 100vh;
         min-block-size: 668px;
       background-position: center;   
-    }
+  }
 
   .decor_rec {
     display: none;
@@ -59,7 +59,7 @@
 
 
 
-@media (width <= 375px) {
+@media (width <= 376px) {
   .theme_light .header {
     position: relative;
     display: grid;
@@ -235,7 +235,7 @@
   }
 }
 
-@media (375px <= width <= 768px) {
+@media (376px <= width <= 768px) {
   .theme_light .header {
     position: relative;
     display: grid;
