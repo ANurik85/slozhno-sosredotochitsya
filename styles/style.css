@@ -11,7 +11,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-self: center;
- /* block-size: 100vh;*/
+  block-size: 100vh;
   min-block-size: 668px;
   width: max(47%, 355px);
 }
@@ -147,7 +147,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     block-size: 100vh;
-    min-block-size: 668px;
+    max-block-size: 668px;
   }
 
   .theme_auto .header__text {
@@ -299,12 +299,12 @@
 
   .theme_auto .footer {
     block-size: 100vh;
-    min-block-size: 668px;
+    max-block-size: 668px;
     
   }
 }
 
-@media (376px <= width <= 768px) {
+@media (375px <= width <= 768px) {
 
   .theme_auto .header {
     position: relative;

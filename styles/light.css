@@ -73,7 +73,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     block-size: 100vh;
-    min-block-size: 668px;
+    max-block-size: 668px;
     
   }
 
@@ -230,12 +230,12 @@
 
   .theme_light .footer {
     block-size: 100vh;
-    min-block-size: 668px;
+    max-block-size: 668px;
     
   }
 }
 
-@media (376px <= width <= 768px) {
+@media (375px <= width <= 768px) {
   .theme_light .header {
     position: relative;
     display: grid;
