@@ -4,7 +4,6 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: #ffeef6;
   background-attachment: fixed;
-  
 }
 
 .header {
@@ -12,14 +11,13 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-self: center;
-  block-size: 100vh;
+ /* block-size: 100vh;*/
   min-block-size: 668px;
-  width: 100%;
+  width: max(47%, 355px);
 }
 
 .header__theme-menu {
   position: relative;
- 
 }
 
 .header__theme-menu-list {
@@ -115,37 +113,33 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
-    
 }
 
 .header__text {
   margin-block: auto;
-  margin-inline: 50% 20px;
+  margin-inline: 10px;
   font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
   color: var(--title-text-color);
-  border: 1px solid var(--title-border-color);
-  }
+  /*border: 1px solid var(--title-border-color);*/
+}
 
 .text-decor {
   background-color: var(--text-decor);
 }
 
 .decorated-zone {
- 
 }
 
 @media (width <= 375px) {
-
   .theme_auto .header {
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     justify-self: center;
-  
   }
 
   .theme_auto .decorated-zone {
@@ -154,7 +148,6 @@
     background-repeat: no-repeat;
     block-size: 100vh;
     min-block-size: 668px;
-    
   }
 
   .theme_auto .header__text {
@@ -163,7 +156,6 @@
     margin-block-end: 30px;
     align-self: center;
     word-wrap: break-word;
-        
   }
 
   .theme_auto .header__theme-menu-list {
@@ -271,11 +263,10 @@
     .content_bottom-container
     .card_block:first-of-type
     .card_title:first-of-type {
-      margin-block-start: 20px;
+    margin-block-start: 20px;
     margin-block-end: 10px;
     font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
     font-weight: 700;
-   
   }
 
   .theme_auto .content_bottom-container .card_block .card_title {
@@ -320,16 +311,19 @@
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
     justify-self: center;
+    
   }
 
   .theme_auto .decorated-zone {
-   
+
   }
 
   .theme_auto .header__text {
-    margin-block-start: 97px;
-    margin-inline-start: min(50%);
-    margin-block-end: 212px;
+    margin-block-start: 7px;
+    width: max(47%, 355px);
+    margin-block-end: 30px;
+    align-self: center;
+    
   }
 
   .theme_auto .header__theme-menu-list {
@@ -446,7 +440,7 @@
     grid-area: books;
     width: min(100%, 230px);
   }
-  
+
   .theme_auto .street {
     grid-area: street;
     width: min(100%, 479px);
@@ -460,11 +454,11 @@
 @media (769px <= width < 1025px) {
 
   .theme_auto .decorated-zone {
-   
+
   }
 
   .theme_auto .header__text {
-  
+
   }
 
   .theme_auto .header__theme-menu-list {
@@ -539,7 +533,6 @@
   font-weight: 700;
   color: var(--title-text-color);
   margin-block-end: 10px;
-
 }
 
 .paragraph {
@@ -547,7 +540,6 @@
   color: var(--main-text-color);
   overflow-wrap: break-word;
   line-height: 23.4px;
- 
 }
 
 .content_top-container .card_block:first-of-type {
@@ -643,8 +635,8 @@
 .content_bottom-container .card_block:not(:last-of-type) {
   margin-block-end: 23px;
 }
-        /* --------------- SECTION GALLERY ---------------  */
-        
+/* --------------- SECTION GALLERY ---------------  */
+
 .content_gallery {
   font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
   margin-inline: 20px;

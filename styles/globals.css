@@ -10,7 +10,14 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  /*overflow-y: hidden;
+  body::-webkit-scrollbar {
+  width: 0;
+}*/
+
 }
+
+
 
 h1,
 h2,
