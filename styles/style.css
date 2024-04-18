@@ -134,7 +134,7 @@
 .decorated-zone {
 }
 
-@media (width <= 375px) {
+@media (375px <= width <= 600px) {
   .theme_auto .header {
     position: relative;
     display: grid;

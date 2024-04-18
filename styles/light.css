@@ -61,7 +61,7 @@
 
 
 
-@media (width <= 375px) {
+@media (375px <= width <= 600px) {
   .theme_light .header {
     position: relative;
     display: grid;

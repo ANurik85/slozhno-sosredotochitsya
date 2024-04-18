@@ -71,7 +71,7 @@
 
 
 
-@media (width <= 375px) {
+@media (375px <= width <= 600px) {
 
   .theme_dark .header {
     position: relative;
