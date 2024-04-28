@@ -4,13 +4,11 @@
 */
 /* Файл variables.css */
 :root {
-  --fonts: 'IBM Plex Mono';
+  --fonts: "IBM Plex Mono";
+  --bg-image-dark: url(../images/cover-image-dark.png);
+  --bg-image-light: url(../images/cover-image-light.png);
   --accent-color: #ff0070;
   --text-color: #353430;
   --title-color: #ffc2e6;
-  --title-border-color: #000000;
   --text-decor: #ff8dcb;
-  --title-text-color: #353430;
-  --heading-color: #353430;
-  --main-text-color: #f1b2ce;/*---*/
 }
