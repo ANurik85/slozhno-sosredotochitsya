@@ -19,7 +19,7 @@
   --title-text-color: var(--text-color);
   --heading-color: var(--text-color);
   --main-text-color: var(--text-color);
-  --btn-status-color: rgb(53 52 48 / 0.5);
+  --btn-link-status-color: rgb(53 52 48 / 0.5);
   background-color: #ffeef6;
   background-attachment: fixed;
 }
@@ -36,7 +36,7 @@
     --title-text-color: var(--text-color);
     --heading-color: var(--text-color);
     --main-text-color: var(--text-color);
-    --btn-status-color: rgb(53 52 48 / 0.5);
+    --btn-link-status-color: rgb(53 52 48 / 0.5);
   }
 
   .page {
