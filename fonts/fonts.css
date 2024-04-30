@@ -1,13 +1,60 @@
 @font-face {
-  font-family: 'IBM Plex mono';
-  src: url(./IBMPlexMono-Regular.woff) format('woff');
+  font-family: 'Inter';
+  src: url(./Inter-Regular.woff) format('woff');
   font-weight: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IBM Plex mono';
-  src: url(./IBMPlexMono-Bold.woff) format('woff');
+  font-family: 'Inter';
+  src: url(./Inter-Bold.woff) format('woff');
   font-weight: bold;
   font-display: swap;
 }
+    
+@font-face {
+  font-family:  'PressStart2P';
+  font-display: swap; 
+  src:
+    local('PressStart2P'),
+    url('../fonts/PressStart2P.woff2') format('woff2 supports variations'),
+    url('../fonts/PressStart2P.woff2') format('woff2-variations'); /*для старых браузеров*/
+    font-weight: 100, 1000;
+    font-stretch: 100%, 1000%;
+ 
+}
+
+/*--------------------Примеры---------------------------*/
+
+@font-face {
+  font-family:  'Roboto-Flex-Variable';
+  font-display: swap; 
+  src:
+    local('Roboto-Flex-Variable'),
+    url('../fonts/Roboto-Flex-Variable.woff2') format('woff2 supports variations'),
+    url('../fonts/Roboto-Flex-Variable.woff2') format('woff2-variations'); /*для старых браузеров*/
+    font-weight: 100, 1000;
+    font-stretch: 100%, 1000%;
+ 
+}
+
+/* Устанавливаем значения по умолчанию */
+:root {
+  --wdth: 100;
+  --wght: 400;
+}
+
+/* Переопределяем нужные CSS-переменные */
+.text_width_large {
+  --wdth: 151;
+}
+
+.text_weight_bold {
+  --wght: 900;
+}
+
+/* Применяем наши CSS-переменные */
+.text_width_large,
+.text_weight_bold {
+  font-variation-settings: 'wdth' var(--wdth), 'wght' var(--wght);
+} 
