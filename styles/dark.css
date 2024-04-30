@@ -19,7 +19,9 @@
   --title-text-color: #000028;
   --heading-color: var(--accent-color);
   --main-text-color: #f1b2ce;
-  --btn-link-status-color: rgb(255 0 112 / 0.5);
+  --link-status-color: #f1b2ce;
+  --btn-focus-color: var(--accent-color);
+  --btn-hover-color: rgb(255 0 112 / 0.4);
   background-color: #000028;
   background-attachment: fixed;
 }
@@ -36,7 +38,9 @@
     --title-text-color: #000028;
     --heading-color: var(--accent-color);
     --main-text-color: #f1b2ce;
-    --btn-link-status-color: rgb(255 0 112 / 0.5);
+    --link-status-color: #f1b2ce;
+    --btn-focus-color: var(--accent-color);
+    --btn-hover-color: rgb(255 0 112 / 0.4);
   }
 
   .page {

@@ -19,7 +19,9 @@
   --title-text-color: var(--text-color);
   --heading-color: var(--text-color);
   --main-text-color: var(--text-color);
-  --btn-link-status-color: rgb(53 52 48 / 0.5);
+  --link-status-color: var(--text-color);
+  --btn-focus-color: var(--text-color);
+  --btn-hover-color: rgb(50 49 45 / 40%);
   background-color: #ffeef6;
   background-attachment: fixed;
 }
@@ -36,7 +38,9 @@
     --title-text-color: var(--text-color);
     --heading-color: var(--text-color);
     --main-text-color: var(--text-color);
-    --btn-link-status-color: rgb(53 52 48 / 0.5);
+    --link-status-color: var(--text-color);
+    --btn-focus-color: var(--text-color);
+    --btn-hover-color: rgb(50 49 45 / 40%);
   }
 
   .page {
