@@ -1,53 +1,12 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: var(--bg-image-dark);
-}
 
 :root .theme_dark {
-  --text-color: var(--accent-color);
-  --title-color: #db00ff;
-  --text-decor: var(--accent-color);
-  --title-text-color: #000028;
-  --heading-color: var(--accent-color);
-  --main-text-color: #f1b2ce;
-  --link-status-color: #f1b2ce;
-  --btn-focus-color: var(--accent-color);
-  --btn-hover-color: rgb(255 0 112 / 0.4);
-  background-color: #000028;
-  background-attachment: fixed;
-}
-
-.theme_dark .decor_rec {
-  display: inherit;
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-color: var(--accent-color);
-    --title-color: #db00ff;
-    --text-decor: var(--accent-color);
-    --title-text-color: #000028;
-    --heading-color: var(--accent-color);
-    --main-text-color: #f1b2ce;
-    --link-status-color: #f1b2ce;
-    --btn-focus-color: var(--accent-color);
-    --btn-hover-color: rgb(255 0 112 / 0.4);
+   
   }
 
-  .page {
-    background-image: var(--bg-image-dark);
-  }
 
-  .decor_rec {
-    display: inherit;
-  }
 }

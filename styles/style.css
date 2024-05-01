@@ -1,28 +1,22 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffeef6;
-  background-attachment: fixed;
+  font-family: var(--fonts, Arial, sans-serif);
+  font-variation-settings: 'wdth' var(--font-wdth), 'wght' var(--font-wght);
 }
 
 /* ---------------  HEADER ---------------  */
 
 .header {
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr;
-  block-size: 100vh;
-  min-block-size: 668px;
+  width: 900;
+  height: 100;
 }
 
-.header__theme-menu {
-  position: relative;
+.block {
+  width: 500;
+  height: 600;
 }
 
+<<<<<<< HEAD
 .header__theme-menu-list {
   display: flex;
   flex-direction: row;
@@ -73,279 +67,14 @@
 .decor_rec::after {
   content: "rec";
   position: absolute;
+=======
+.accent {
+>>>>>>> 72fc4c760ef0cedcf8c9d53fb27daef0b1718698
   color: var(--accent-color);
-  left: calc(94% - 15px);
-  top: 20px;
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  text-transform: uppercase;
 }
-
-.decor_rec::before {
-  content: "";
-  position: absolute;
-  color: var(--accent-color);
-  width: 9px;
-  height: 9px;
-  background: #ff0070;
-  border-radius: 50%;
-  left: calc(97% + 5px);
-  top: 27px;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-}
-
-.decor_corner::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: calc(96%);
-  top: 20px;
-  border-width: 1px 1px 0px 0px;
-  border-style: solid;
-  border-color: var(--text-color);
-}
-
-.decor_corner::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 20px;
-  top: 723px;
-  border-width: 0px 0px 1px 1px;
-  border-style: solid;
-  border-color: var(--text-color);
-}
-
-.header__title {
-  text-shadow: 4px 4px 0 var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  color: var(--title-color);
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 82.5%;
-}
-
-.header__text {
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23.4px;
-  color: var(--title-text-color);
-  justify-self: right;
-  align-self: center;
-  margin-inline: 20px;
-  margin-block-start: 10px;
-  margin-block-end: 30px;
-}
-
-.text-decor {
-  background-color: var(--text-decor);
-}
-
-/* --------------- SECTION TOP ---------------  */
-
-.content_top {
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  line-height: 23.4px;
-  font-size: 18px;
-  margin-inline: 20px;
-  margin-block-start: 60px;
-  margin-block-end: 80px;
-}
-
-.content_top-container {
-  display: grid;
-  grid-template-columns: [title] calc(34%) [card] calc(66.5%);
-  grid-auto-flow: row;
-  row-gap: 20px;
-}
-
-.heading {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--heading-color);
-  grid-column: title;
-}
-
-.content_top-container .card_block {
-  grid-column: card;
-}
-
-.card_block {
-  display: grid;
-  align-items: start;
-  row-gap: 10px;
-}
-
-.card_title {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--title-text-color);
-}
-
-.paragraph {
-  font-weight: 400;
-  color: var(--main-text-color);
-  overflow-wrap: break-word;
-  line-height: 23.4px;
-}
-
-.card_link {
-  text-decoration: none;
-  text-shadow: 2px 1px 0 var(--text-decor);
-}
-
-.card_link:hover {
-  border-bottom: 1px solid var(--link-status-color);
-}
-
-.card_link:focus {
-  outline: none;
-}
-
-.card_link:focus-visible {
-  outline: 1px solid var(--link-status-color);
-}
-
-/* --------------- SECTION MIDDLE ---------------  */
-
-.content_middle {
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  line-height: 23.4px;
-  font-size: 18px;
-  color: var(--text-color);
-  margin-inline: 20px;
-  margin-block-end: 80px;
-}
-
-.content_middle-container {
-  display: grid;
-  align-items: start;
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  grid-template-rows: auto auto;
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.content_middle-heading {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--heading-color);
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  max-width: 315px;
-}
-
-/* --------------- SECTION BOTTOM ---------------  */
-
-.content_bottom {
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  font-style: normal;
-  line-height: 23.4px;
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--text-color);
-  margin-inline: 20px;
-  margin-block-end: 80px;
-}
-
-.content_bottom-container {
-  display: grid;
-  grid-template-columns: [title] calc(34%) [card] calc(66%);
-  grid-auto-flow: row;
-  row-gap: 20px;
-}
-
-.content_bottom-heading {
-  grid-row-start: 1;
-  grid-row-end: 7;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--heading-color);
-  grid-column: title;
-}
-
-.content_bottom-container .card_block {
-  grid-column: card;
-}
-
-.content_bottom-container .card_title:not(:nth-child(2)) {
-  font-weight: 400;
-}
-
-/* --------------- SECTION GALLERY ---------------  */
-
-.content_gallery {
-  font-family: var(--fonts, IBM Plex Mono, Arial, sans-serif);
-  margin-inline: 20px;
-  margin-block-end: 60px;
-}
-
-.content_gallery-container {
-  display: grid;
-  grid-template-columns: 32% 32% 32%;
-  grid-template-rows: 25% 30% 41%;
-  grid-template-areas:
-    "sunset sunset ice-cream"
-    "tape books ice-cream"
-    "tape street street";
-  row-gap: 20px;
-  column-gap: 20px;
-  height: 100%;
-}
-
-.content_gallery-heading {
-  font-size: 18px;
-  color: var(--title-text-color);
-  margin-block-end: 20px;
-}
-
-.content_picture {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-}
-
-.sunset {
-  grid-area: sunset;
-  width: min(100%, 649px);
-}
-
-.ice-cream {
-  grid-area: ice-cream;
-  width: min(100%, 315px);
-}
-
-.tape {
-  grid-area: tape;
-  width: min(100%, 315px);
-}
-
-.books {
-  grid-area: books;
-  width: min(100%, 315px);
-}
-
-.street {
-  grid-area: street;
-  width: min(100%, 649px);
-}
-
 /* ---------------  FOOTER ---------------  */
-
 .footer {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
@@ -678,4 +407,8 @@
   .footer {
     min-block-size: 1024px;
   }
+=======
+  width: 900;
+  height: 100;
+>>>>>>> 72fc4c760ef0cedcf8c9d53fb27daef0b1718698
 }
