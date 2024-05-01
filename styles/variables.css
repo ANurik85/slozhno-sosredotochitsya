@@ -1,16 +1,10 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+/* Файл variables.css */
 :root {
-  --fonts: "Inter";
-  --accent-fonts: "PressStart2P";
-  --font-wdth: 100; 
-  --font-wght: 400; 
-  
-  --bg-color: #fde894;
-  --accent-color: #ff0070;
-
-  
-
-/*------------------------------------*/
-
+  --fonts: "IBM Plex Mono";
   --bg-image-dark: url(../images/cover-image-dark.png);
   --bg-image-light: url(../images/cover-image-light.png);
   --accent-color: #ff0070;
@@ -18,5 +12,3 @@
   --title-color: #ffc2e6;
   --text-decor: #ff8dcb;
 }
-
-
