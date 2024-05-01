@@ -60,7 +60,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--btn-focus-color);
+  outline: none;
+  border-bottom: 1px solid var(--btn-focus-color);
 }
 
 .header__theme-menu-button_active {
@@ -363,7 +364,7 @@
   line-height: 82.5%;
 }
 
-@media (width <= 375px) {
+@media (width <= 600px) {
   .header {
     min-block-size: 668px;
     width: max(47%, 355px);
@@ -485,141 +486,12 @@
   }
 
   .content_picture {
-    width: min(100%, 355px);
+    width: min(100%, 560px);
     margin-block-end: 6px;
   }
 
   .footer {
     max-block-size: 668px;
-  }
-}
-
-@media (375px < width <= 600px) {
-  .header {
-    min-block-size: 668px;
-    width: max(47%, 355px);
-  }
-
-  .decorated-zone {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    block-size: 100vh;
-    max-block-size: 668px;
-  }
-
-  .header__text {
-    margin-block-start: 17px;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: column;
-    align-items: flex-end;
-    margin-block-start: 75px;
-    margin-inline-end: 8px;
-    gap: 13px;
-  }
-
-  .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-inline-start: 10px;
-  }
-
-  .decor_corner::before {
-    top: 95%;
-    left: 10px;
-  }
-
-  .decor_corner::after {
-    top: 1.5%;
-    left: 93%;
-  }
-
-  .decor_rec::after {
-    top: 4%;
-    left: 81%;
-  }
-
-  .decor_rec::before {
-    top: 7%;
-    left: 94%;
-  }
-
-  .content_top-container {
-    display: block;
-  }
-
-  .content_top {
-    margin-inline: 10px;
-    margin-block-start: 40px;
-    margin-block-end: 50px;
-  }
-
-  .heading {
-    margin-block-end: 20px;
-  }
-
-  .content_top-container .card_block {
-    margin-block-end: 20px;
-  }
-
-  .content_middle {
-    margin-inline: 10px;
-    margin-block-end: 50px;
-  }
-
-  .content_middle-container {
-    display: block;
-  }
-
-  .content_middle-heading {
-    margin-block-end: 20px;
-  }
-
-  .content_middle-container .card_block {
-    margin-block-end: 20px;
-  }
-
-  .content_bottom-container {
-    display: block;
-  }
-
-  .content_bottom {
-    margin-inline: 10px;
-    margin-block-end: 50px;
-  }
-
-  .content_bottom-heading {
-    margin-block-end: 20px;
-  }
-
-  .content_bottom-container .card_block {
-    margin-block-end: 20px;
-  }
-
-  .content_bottom-container .card_title:nth-child(2) {
-    margin-block-end: 19px;
-  }
-
-  .content_gallery {
-    margin-inline: 10px;
-    margin-block-end: 31px;
-  }
-  .content_gallery-container {
-    display: block;
-  }
-
-  .content_gallery-heading {
-    margin-block-end: 10px;
-  }
-
-  .content_picture {
-    width: min(100%, 600px);
-    margin-block-end: 6px;
-  }
-
-  .footer {
-    min-block-size: 668px;
   }
 }
 
